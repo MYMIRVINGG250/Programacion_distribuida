@@ -1,0 +1,20 @@
+{
+  "name": "programacion",
+  "version": "1.0.0",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "telem": "standard",
+    "startDev": "nodemon app.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.0.0",
+    "express": "^4.17.3",
+    "nodemo": "^1.0.0",
+    "nodemon": "^2.0.15",
+    "standard": "^16.0.4"
+  },
+  "description": ""
+}
