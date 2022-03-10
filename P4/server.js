@@ -13,6 +13,10 @@ app.get('/', function(req, res) {
     res.render('index');
 });
 
+app.get('/plantilla', function(req, res) {
+    res.render('plantilla');
+});
+
 app.get('/practica', function(req, res) {
     res.render('practica');
 });
@@ -22,5 +26,5 @@ app.post('/ingreso', function(req, res) {
     let pass = md5(req.body.pass)
     res.render('ingreso', {correo: req.body.email, pass: pass});
 });
-//listen
+
 app.listen(appConfig.port, ()=> console.log(`Puesto en marcha en puerto ${appConfig.port}`)) 
