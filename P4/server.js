@@ -5,6 +5,8 @@ const app = express()
 const bodyParser = require('body-parser')
 const md5 = require('md5')
 const { appConfig } = require('./lib/config')
+const res = require('express/lib/response')
+const req = require('express/lib/request')
 
 app.use(bodyParser.urlencoded({ extended: false }))
 app.set('view engine', 'pug');
@@ -15,10 +17,6 @@ app.get('/', function(req, res) {
 
 app.get('/plantilla', function(req, res) {
     res.render('plantilla');
-});
-
-app.get('/practica', function(req, res) {
-    res.render('practica');
 });
 
 app.post('/ingreso', function(req, res) {
